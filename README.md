@@ -63,7 +63,7 @@ PWN2PDF is a Linux-based red team tool. It generates a malicious desktop launche
     git clone https://github.com/0xbitx/DEDSEC_PWN2PDF.git
     cd DEDSEC_PWN2PDF
     chmod +x dedsec-pwn2pdf
-    sudo ./dedsec-pwn2pdf
+    ./dedsec-pwn2pdf
     
 ### TESTED ON FOLLOWING
 * Kali Linux 
