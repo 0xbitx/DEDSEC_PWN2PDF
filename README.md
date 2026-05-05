@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDNjMHd5cHNnYnNwZjc2eDRxeHY1ZHpkNmVldG96ZXYzcmN5MDJlcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7AHLANoFz7zm1VLEM4/giphy.gif", width="400", height="400">
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWMybWZkc3B4dzBwYzFxM2JtY213aG14Nml2cXAwYXNpeWY0ODh3eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sMiP6YqCIyPCfshhyU/giphy.gif", width="400", height="400">
 </p>
 
 <h1 align="center">PWN2PDF</h1>
@@ -8,14 +8,14 @@
 </h4>
 
 ### DESCRIPTION
-**PWN2PDF** is a linux based red team tool. It generates a malicious desktop launcher that is disguised as a standard PDF file using a zero-width space character in the filename. When an unsuspecting victim double-clicks the file, their system interprets it as a `.desktop` application rather than a genuine PDF. The launcher then performs two actions simultaneously: it downloads and opens a legitimate PDF document to maintain the illusion of normal behavior, while silently fetching and executing an attacker-supplied payload in the background. This allows the payload to run without disrupting the victim's experience, as the real PDF captures their attention. The tool is intended for use only in controlled environments with explicit written permission.
+
+PWN2PDF is a Linux-based red team tool. It generates a malicious desktop launcher that is disguised as a standard PDF file. When an unsuspecting victim double-clicks the file, their system interprets it as a .desktop application rather than a genuine PDF. The launcher then performs two actions simultaneously: it downloads and opens a legitimate PDF document to maintain the illusion of normal behavior, while silently fetching and executing an attacker-supplied payload in the background. This allows the payload to run without disrupting the victim's experience, as the real PDF captures their attention. The tool is intended for use only in controlled environments with explicit written permission.
 
 
 ### Key Features:
 
 - **Multiple Payload Support**: Supports binary, bash, python, reverse shell, and Metasploit payloads
 - **Controlled Payload Hosting**: Integrated Supabase file upload system for controlled database
-- **Zero-Width Filename Trick**: Disguises malicious .desktop launchers as legitimate PDF files using invisible Unicode characters
 - **Zero-Dependency Architecture**: Pure Python implementation with no external libraries required beyond standard modules
 
 ## SETUP SUPABASE
