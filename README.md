@@ -56,7 +56,7 @@ PWN2PDF is a Linux-based red team tool. It generates a malicious desktop launche
 
 <img width="571" height="633" alt="Screenshot_20260505_094346" src="https://github.com/user-attachments/assets/4abf1a4f-7537-4dcd-8c45-3458aa398cbf" />
 
-   * put "data" as Bucket name and enable Public bucket and click Create
+   * Put "data" as the bucket name, enable public bucket, and click Create.
 
 and update your config.json file with your 
 Project URL, Publishable key, service role secret
