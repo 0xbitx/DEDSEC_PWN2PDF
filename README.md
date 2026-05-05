@@ -13,7 +13,7 @@
 
 ### Key Features:
 
-- **Multiple Payload Support**: Seamlessly handles both Python and Bash payloads with automatic execution detection
+- **Multiple Payload Support**: Supports binary, bash, python, reverse shell, and Metasploit payloads
 - **Controlled Payload Hosting**: Integrated Supabase file upload system for controlled database
 - **Zero-Width Filename Trick**: Disguises malicious .desktop launchers as legitimate PDF files using invisible Unicode characters
 - **Zero-Dependency Architecture**: Pure Python implementation with no external libraries required beyond standard modules
