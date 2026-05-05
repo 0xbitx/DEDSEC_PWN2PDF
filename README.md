@@ -25,6 +25,47 @@
 - Evasion technique development
 - Educational purposes in cybersecurity
 
+## SETUP SUPABASE
+
+   * Go to: https://supabase.com/dashboard/new
+
+<img width="714" height="492" alt="Screenshot_20260505_093635" src="https://github.com/user-attachments/assets/d2a58e19-63bf-4210-adf5-ba09a8a2aca6" />
+    
+   * Create organization (org, personal)
+
+<img width="722" height="896" alt="Screenshot_20260505_093758" src="https://github.com/user-attachments/assets/eb83c347-bb2f-49d3-94f8-2d08b286faa4" />
+
+   * enable (Enable Data API) and (Automatically expose new tables)
+
+<img width="926" height="540" alt="Screenshot_20260505_093835" src="https://github.com/user-attachments/assets/24b60cfe-da7d-44c9-82b4-b49edcf983f1" />
+
+   * Copy Product URL and Publishable Key
+
+<img width="980" height="617" alt="Screenshot_20260505_093921" src="https://github.com/user-attachments/assets/06c1cec9-f365-4140-b78a-2606f5cb9bf1" />
+
+   * Go to Project Settings
+     
+<img width="714" height="625" alt="Screenshot_20260505_093948" src="https://github.com/user-attachments/assets/f77b1040-866c-4fa3-8133-e67f882b8199" />
+   
+   * select API Keys
+
+<img width="1201" height="573" alt="Screenshot_20260505_094048" src="https://github.com/user-attachments/assets/3db41af1-f001-4afb-bcc4-fc7f947e8eac" />
+
+   * Copy Service role secret
+     
+<img width="675" height="622" alt="Screenshot_20260505_094138" src="https://github.com/user-attachments/assets/57899895-0d1a-4f33-bcbd-6f6c552e9cd3" />
+
+   * Go to Storage
+     
+<img width="1152" height="486" alt="Screenshot_20260505_094209" src="https://github.com/user-attachments/assets/5a5ea812-2d0f-44f0-954d-b874ace983e4" />
+   
+   * click New bucket
+
+<img width="571" height="633" alt="Screenshot_20260505_094346" src="https://github.com/user-attachments/assets/4abf1a4f-7537-4dcd-8c45-3458aa398cbf" />
+
+   * put "data" as Bucket name and enable Public bucket and click Create
+
+
 ### INSTALLATION
     git clone https://github.com/0xbitx/DEDSEC_PWN2PDF.git
     cd DEDSEC_PWN2PDF
