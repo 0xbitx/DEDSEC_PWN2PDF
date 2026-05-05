@@ -58,6 +58,17 @@ PWN2PDF is a Linux-based red team tool. It generates a malicious desktop launche
 
    * put "data" as Bucket name and enable Public bucket and click Create
 
+and update your config.json file with your 
+Project URL, Publishable key, service role secret
+
+### Example:
+```json
+{
+    "SUPABASE_URL": "https://gqbdetbewhevkksclbfu.supabase.co",
+    "SUPABASE_KEY": "sb_publishable_TvQ2jFqzrPfsKC-krVrwqA_g_xjy9GM",
+    "SUPABASE_SERVICE_KEY": "eyJHbgcrOeJIUsI2NiIsInR3cCI6IkpXcCJ9.eyJpc311OilzeXBhymFrZSIsInJlZiI6ImdxYmR5dGJld2hpdmtrZWNsYmd14iwicm9sZSI6InNlcnZpY2Vfcm9sZSIs3mlhdCI2MTc3NzkyMDk4OCwiZXhwIjoyMDkzNDk2OTg4fQ.L4wdbD3QgDv2NHlP6ZU53wpI2jlLZ0TQXfq6vy7VB_A"
+}
+```
 
 ### INSTALLATION
     git clone https://github.com/0xbitx/DEDSEC_PWN2PDF.git
