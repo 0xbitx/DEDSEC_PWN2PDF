@@ -4,19 +4,62 @@
 </p>
 
 <h1 align="center">PWN2PDF</h1>
-<h4 align="center">A Linux based tool that Disguises your payload as a PDF to silently execute on a linux system.
-</h4>
+<h4 align="center">A Linux-based tool that disguises your payload as a legitimate PDF file to silently execute on a Linux system.</h4>
 
-### DESCRIPTION
+---
 
-PWN2PDF is a Linux-based red team tool. It generates a malicious desktop launcher that is disguised as a standard PDF file. When an unsuspecting victim double-clicks the file, their system interprets it as a .desktop application rather than a genuine PDF. The launcher then performs two actions simultaneously: it downloads and opens a legitimate PDF document to maintain the illusion of normal behavior, while silently fetching and executing an attacker-supplied payload in the background. This allows the payload to run without disrupting the victim's experience, as the real PDF captures their attention. The tool is intended for use only in controlled environments with explicit written permission.
+## DESCRIPTION
 
+**PWN2PDF** is a Linux-based red team tool that generates a malicious desktop launcher disguised as a standard PDF file. When an unsuspecting victim double-clicks the file, their system interprets it as a `.desktop` application rather than a genuine PDF. The launcher then performs two actions simultaneously: it downloads and opens a legitimate PDF document to maintain the illusion of normal behavior, while silently fetching and executing an attacker-supplied payload in the background. This allows the payload to run without disrupting the victim's experience, as the real PDF captures their attention.
 
-### Key Features:
+**Inspired by APT41's extensive use of PDF-based lures in their spear-phishing campaigns** — specifically their documented operations where malicious PDF documents served as the initial infection vector for high-value targets — PWN2PDF demonstrates how sophisticated threat actors weaponize trusted file formats to bypass security controls. APT41 has consistently used PDF lures in their operations, often embedding malicious functionality or using PDFs as decoys to distract victims while first-stage payloads are deployed in the background.
 
-- **Multiple Payload Support**: Supports binary, bash, python, reverse shell, and Metasploit payloads
-- **Controlled Payload Hosting**: Integrated Supabase file upload system for controlled database
-- **Zero-Dependency Architecture**: Pure Python implementation with no external libraries required beyond standard modules
+**APT41's PDF Tradecraft:**
+- **Spear-phishing with PDF attachments**: APT41 frequently uses PDF lures in targeted phishing campaigns against government, technology, and healthcare sectors
+- **Decoy documents**: Legitimate-looking PDFs are used as distractions while malware executes in the background
+- **Initial access focus**: PDF lures are a primary method for gaining the first foothold in target networks
+- **Global targeting**: PDF-based lures are effective across all regions and language barriers
+- **Evasion of email gateways**: PDFs are less likely to be blocked than executable attachments
+
+This tool is intended for use **only in controlled environments with explicit written permission**.
+
+---
+
+## APT41 Parallels
+
+| APT41 Technique | PWN2PDF Implementation |
+| :--- | :--- |
+| **PDF-based spear-phishing lures** | Generates realistic PDF launchers with authentic icons and metadata |
+| **Decoy execution** | Downloads and opens a legitimate PDF to distract the victim |
+| **Silent payload delivery** | Payload executes in the background without disrupting user experience |
+| **Initial access focus** | Prioritizes gaining the first foothold through user interaction |
+| **Evasion of security tools** | Bypasses traditional file-type analysis and email gateway scanning |
+
+---
+
+## Features
+
+| Feature | Description |
+| :--- | :--- |
+| **Realistic PDF Disguise** | Authentic PDF icon, filename, and metadata spoofing |
+| **Decoy Execution** | Downloads and opens a legitimate PDF to maintain illusion |
+| **Silent Payload Delivery** | Payload runs in background with no terminal popups |
+| **Multiple Payload Options** | Reverse shells, Metasploit, custom scripts (Python, Bash, ELF) |
+| **Zero Dependencies** | Uses only standard Linux utilities |
+| **Cross-Desktop Support** | Works on GNOME, KDE, XFCE, and other environments |
+| **Cloud Infrastructure** | Supabase integration for payload hosting |
+| **Automatic Cleanup** | Temporary files removed after execution |
+
+---
+
+## Supported Payload Types
+
+| Payload Type | Examples |
+| :--- | :--- |
+| **Reverse Shells** | Bash, Python, Zsh, Awk, Telnet, Sqlite3, Socat, Ruby, PHP, Netcat |
+| **Metasploit** | linux/x64/meterpreter/reverse_tcp, linux/x64/meterpreter_reverse_https |
+| **Custom Scripts** | Python, Bash, Binary (ELF) |
+| **Custom Payloads** | Bring your own executable or script |
 
 ## SETUP SUPABASE
 
